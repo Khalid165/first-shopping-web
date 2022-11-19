@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcdfdda9-9e1d-4d68-8330-0ca263df13c4" name="Changes" comment="j">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/products.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/products.db" afterDir="false" />
-    </list>
+    <list default="true" id="dcdfdda9-9e1d-4d68-8330-0ca263df13c4" name="Changes" comment="j" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +109,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٥" />
       <updated>1668855926350</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL؜٠٠٠٠٦" summary="j">
+      <created>1668857775715</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٦" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٦" />
+      <updated>1668857775715</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

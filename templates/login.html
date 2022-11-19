@@ -1,0 +1,21 @@
+
+{% import "bootstrap/wtf.html" as wtf %}
+{%include 'header.html'%}
+<div class=" login-img">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h1>Welcome Back</h1>
+              {%with error = get_flashed_messages()%}
+              {%if error%}
+              <p style="color:red;">{{error[0]}}</p>
+              {%endif%}
+              {%endwith%}
+            {{wtf.quick_form(form,button_map={'submit':'dark'})}}
+            <a href="{{url_for('new_account')}}" style="color:#A5C9CA;">or create New account ?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{%include 'footer.html'%}

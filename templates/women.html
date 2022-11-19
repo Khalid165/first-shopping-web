@@ -1,0 +1,23 @@
+{%include 'header.html'%}
+<div class="container">
+    <br>
+    <div class="choose">
+      <a href="#list-th"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+      <a href="#large-th"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+    </div>
+    <div id="list-th">
+        {%for item in women%}
+      <div class="book read">
+        <div class="cover">
+          <img src="{{item.p_image}}">
+        </div>
+        <div class="description">
+          <a class="title btn" href="{{url_for('item',id=item.id,user=current_user.username,s=item.p_gender)}}" style="text-align:left;" >{{item.p_name}}<br>
+            <span class="author">{{item.p_price}}</span></a>
+        </div>
+
+      </div>
+{%endfor%}
+    </div>
+</div>
+{%include 'footer.html'%}

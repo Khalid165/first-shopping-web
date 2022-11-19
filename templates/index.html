@@ -1,0 +1,97 @@
+{%include 'header.html'%}
+
+
+
+<div class="container" >
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 mx-auto men" style="text-align:center;">
+                <h1 style="padding-top:300px;" class="category">Men Collection</h1>
+                <h5 style="color:#FFFFFF;">our best collection of men Fashion</h5>
+                {%if current_user.is_authenticated%}
+                <a class="btn btn-dark" href="{{url_for('men',user=current_user.username)}}">Shop Now</a>
+              {%else%}
+              <a class="btn btn-dark" href="{{url_for('men')}}">Shop Now</a>
+              {%endif%}
+
+          </div>
+        </div>
+        <div id="large-th">
+  <div class="container">
+    <br>
+    <div class="choose">
+      <a href="#list-th"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+      <a href="#large-th"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+    </div>
+    <div id="list-th">
+        {%for item in men_items[:4]%}
+      <div class="book read">
+        <div class="cover">
+          <img src="{{item.p_image}}">
+        </div>
+        <div class="description">
+          <a class="title btn" href="{{url_for('item',id=item.id,user=current_user.username,s=item.p_gender)}}" style="text-align:left;" >{{item.p_name}}<br>
+            <span class="author">{{item.p_price}}</span></a>
+        </div>
+
+      </div>
+    {%endfor%}
+
+
+
+
+    </div>
+      {%if current_user.is_authenticated%}
+        <a href="{{url_for('men',user=current_user.username)}}">See more ➞</a>
+        {%else%}
+        <a href="{{url_for('men')}}">See more ➞</a>
+        {%endif%}
+  </div>
+</div>
+
+<div class="row" style="padding-top:100px;">
+          <div class="col-lg-12 col-md-12 col-sm-12 mx-auto women" style="text-align:center;">
+                <h1 style="padding-top:300px;" class="category">Women Collection</h1>
+                <h4 style="color:black;">Explore Courtney fashion collection </h4>
+              {%if current_user.is_authenticated%}
+                <a class="btn btn-dark" href="{{url_for('women',user=current_user.username)}}">Shop Now</a>
+              {%else%}
+              <a class="btn btn-dark" href="{{url_for('women')}}">Shop Now</a>
+              {%endif%}
+
+          </div>
+        </div>
+    <div id="large-th">
+  <div class="container">
+    <br>
+    <div class="choose">
+      <a href="#list-th"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+      <a href="#large-th"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+    </div>
+    <div id="list-th" style="padding-bottom:100px;">
+        {%for item in women_items[:4]%}
+      <div class="book read">
+        <div class="cover">
+          <img src="{{item.p_image}}">
+        </div>
+        <div class="description">
+          <a class="title btn" style="text-align:left;" href="{{url_for('item',id=item.id,user=current_user.username,s=item.p_gender)}}">{{item.p_name}}<br>
+            <span class="author">{{item.p_price}}</span></a>
+        </div>
+
+      </div>
+         {%endfor%}
+
+        {%if current_user.is_authenticated%}
+        <a href="{{url_for('women',user=current_user.username)}}">See more ➞</a>
+        {%else%}
+        <a href="{{url_for('women')}}">See more ➞</a>
+        {%endif%}
+
+</div>
+
+</div>
+        </div>
+    </div>
+
+{%include 'footer.html'%}

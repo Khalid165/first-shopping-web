@@ -1,0 +1,247 @@
+body{
+    background-color:#F6F6C9;
+}
+
+
+.category{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-brand{
+font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#423F3E;
+  color:#4b4c4d;
+}
+
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+    color:#FFFFFF;
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+    color:#FFFFFF;
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+.login-img{
+ height: 800px;
+ background: url(https://99percentinvisible.org/app/uploads/2019/02/abstract-background-colors.jpg);
+ color: white;
+ padding-top:150px;
+ width:100%;
+ background-repeat: no-repeat;
+
+}
+
+.new_account{
+ height: 800px;
+
+ background: url(https://wallpaper.dog/large/10717714.jpg);
+ color: white;
+ padding-top:150px;
+ background-repeat: no-repeat;
+}
+
+.men{
+    height: 500px;
+    width:  100%;
+ background: url(https://img.mensxp.com/media/content/2020/Oct/header_banner_5f88366842a78.jpeg);
+ color: white;
+
+ background-repeat: no-repeat;
+}
+
+.women{
+ height: 500px;
+ width:  100%;
+ background: url(https://www.max.co.nz/media/catalog/category/Max_Dresses_Category_Header_Liberty_Desktop.jpg);
+ color: white;
+
+ background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 910px;
+}
+
+.choose {
+  width: 100%;
+  height: 40px;
+}
+.fa {
+  margin-right: 20px;
+  font-size: 30px;
+  color: gray;
+  float: right;
+}
+/******************************************
+Book stuff
+*******************************************/
+
+.book {
+  display: inline-block;
+  width: 230px;
+  height: 390px;
+  box-shadow: 0 0 20px #aaa;
+    margin: 15px;
+  padding: 10px 10px 0 10px;
+  vertical-align: top;
+  transition: height 1s;
+}
+/* star button */
+
+
+
+.cover img {
+  width: 100%;
+}
+
+.book p {
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.book .author {
+  font-size: 15px;
+}
+@media (max-width: 941px) {
+  .container {
+    max-width: 700px;
+  }
+  .book {
+    margin: 49px;
+  }
+}
+@media (max-width: 730px) {
+  .book {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .cover {
+
+  }
+}
+
+/*********************************
+other
+**********************************/
+
+h1 {
+  color: gray;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -3px;
+
+}
+
+/**********************************
+display change
+***********************************/
+/*book height smaller, cover opacity, move text onto cover and star too
+animate it */
+#list-th:target .book {
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  margin: 25px auto 25px auto;
+}
+
+#list-th:target .cover {
+  width: 246px;
+}
+
+#list-th:target img {
+  opacity: .1;
+}
+
+#list-th:target p {
+  margin-top: -62px;
+  margin-left: 20px;
+}
+/* remove button? */
+#large-th:target .book {
+  height: 390px;
+}
+.parent {
+
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child_img {
+  display: inline-block;
+
+  padding: 1rem 1rem;
+
+}
+.child_text{
+    display: inline-block;
+
+  padding: 10rem 10rem;
+}
+
+/***********************************
+star animation
+***********************************/
+/***********************************
+zoom on click
+***********************************/
+
+
+
+
+

@@ -1,0 +1,43 @@
+{%include 'header.html'%}
+ <div class="container text-center" >
+    <div class="row">
+      <div class="col-12 rounded-4" style="margin-top:15%;margin-bottom:15%;background-color:#F2E7D5;padding:100px;font-family: 'Josefin Sans', sans-serif;"><h1>Your Basket.</h1>
+          {%if num>1%}
+          <p>{{num}} items</p>
+          {%else%}
+          <p>{{num}} item</p>
+          {%endif%}
+
+            {%for item in items%}
+
+                <img src="{{item}}" style="width:100px;padding-left:20px;padding-bottom:20px;"><a href="{{url_for('delete',item=item,user=current_user.username)}}" class="btn btn-danger">x</a>
+
+
+
+            {%endfor%}
+
+
+
+          {%if num==0%}
+          <a href="{{url_for('home',user=current_user.username)}}" class="btn btn-danger">Start Shopping.</a>
+          {%else%}
+          <form action="{{url_for('payment')}}" method="POST" >
+              <input type="hidden" name="price" value="{{price*100}}">
+              <script
+                src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="pk_test_51M5kAHIzx1auNHnjZkLpP4xeXZblV7l9l28tWjBUHtYPlKAaoRT6SzD382wM8HuXul3GZ10L2nVUAO0n0x4Pbb5G00cKdEh7sc"
+                data-name="{{current_user.username}} Basket"
+                data-description="{{num}} items"
+                data-amount=" {{price*100}} "
+                data-currency="usd">
+              </script>
+          </form>
+
+          {%endif%}
+      </div>
+          </div>
+
+    </div>
+ </div>
+{%include 'footer.html'%}

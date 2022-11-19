@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dcdfdda9-9e1d-4d68-8330-0ca263df13c4" name="Changes" comment="add req.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirenents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirenents.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +184,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٧" />
       <updated>1668871655470</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL؜٠٠٠١٨" summary="add req.txt">
+      <created>1668898132444</created>
+      <option name="number" value="LOCAL؜٠٠٠١٨" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٨" />
+      <updated>1668898132444</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

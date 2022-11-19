@@ -171,7 +171,7 @@ def shelf():
     user=User.query.filter_by(username=request.args.get("user")).first()
     if user.shelf!=None:
         all_items=user.shelf.split(",")
-        print(all_items)
+
 
         if "None" in all_items:
             all_items.remove("None")

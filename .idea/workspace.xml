@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dcdfdda9-9e1d-4d68-8330-0ca263df13c4" name="Changes" comment="add req.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.upm/store.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirenents.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +41,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../automation-project" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -198,7 +196,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٩" />
       <updated>1668898750736</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL؜٠٠٠٢٠" summary="add req.txt">
+      <created>1668945172722</created>
+      <option name="number" value="LOCAL؜٠٠٠٢٠" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٢٠" />
+      <updated>1668945172722</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

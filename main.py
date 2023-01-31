@@ -163,7 +163,7 @@ def buy():
 
     user.shelf=f"{user.shelf},{request.args.get('id')}"
     db.session.commit()
-    return redirect(url_for(request.referrer))
+    return redirect(url_for("home"))
 
 @app.route("/shelf")
 @login_required
